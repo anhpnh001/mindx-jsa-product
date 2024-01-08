@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  background-color: #fff;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table__head {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.table__head,
+.table__data {
+  padding: 8px 16px;
+  border: 1px solid var(--quaternary-color);
+}
+
+.table__button {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.table__button:hover {
+  background-color: var(--secondary-color);
+}
+
+.table__button:not(:last-of-type) {
+  margin-bottom: 8px;
+}
