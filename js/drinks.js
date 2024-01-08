@@ -8,10 +8,10 @@ drinksPosts.reverse().forEach((post) => {
   const postElement = document.createElement('div')
   postElement.classList.add('post')
   postElement.innerHTML = `
-            <a href="drinks.html" class="post__category">Đồ uống</a>
-            <a href="detail.html?id=${post.id}" class="post__title">${
-    post.title
-  }</a>
+            <a href="/mindx-jsa-product/drinks.html" class="post__category">Đồ uống</a>
+            <a href="/mindx-jsa-product/detail.html?id=${
+              post.id
+            }" class="post__title">${post.title}</a>
             <p class="post__text">
             ${post.content.slice(0, 100)}...
             </p>

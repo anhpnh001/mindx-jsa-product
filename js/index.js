@@ -177,7 +177,8 @@ topFoodPosts.forEach((post, index) => {
   foodPosts[index].querySelector(
     '.card__title'
   ).href = `/detail.html?id=${post.id}`
-  foodPosts[index].querySelector('.card__category').href = '/foods.html'
+  foodPosts[index].querySelector('.card__category').href =
+    '/mindx-jsa-product/foods.html'
 })
 
 topDrinkPosts.forEach((post, index) => {
@@ -189,7 +190,8 @@ topDrinkPosts.forEach((post, index) => {
   drinkPosts[index].querySelector(
     '.card__title'
   ).href = `/detail.html?id=${post.id}`
-  drinkPosts[index].querySelector('.card__category').href = '/drinks.html'
+  drinkPosts[index].querySelector('.card__category').href =
+    '/mindx-jsa-product/drinks.html'
 })
 
 topDecorationPosts.forEach((post, index) => {
@@ -202,7 +204,7 @@ topDecorationPosts.forEach((post, index) => {
     '.card__title'
   ).href = `/detail.html?id=${post.id}`
   decorationPosts[index].querySelector('.card__category').href =
-    '/decorations.html'
+    '/mindx-jsa-product/decorations.html'
 })
 
 const countdownNumberDays = document.querySelector('.countdown__number--days')

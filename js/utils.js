@@ -13,7 +13,7 @@ if (user) {
 const logout = document.getElementById('logout')
 logout.addEventListener('click', function () {
   localStorage.removeItem('user')
-  window.location.href = '/login.html'
+  window.location.href = '/mindx-jsa-product/login.html'
 })
 
 categories = ['Thông tin', 'Ẩm thực', 'Đồ uống', 'Trang trí']

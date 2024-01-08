@@ -34,7 +34,7 @@ form.addEventListener('submit', function (e) {
   localStorage.setItem('users', JSON.stringify(users))
   showToast('Đăng ký thành công')
   setTimeout(() => {
-    window.location.href = 'login.html'
+    window.location.href = '/mindx-jsa-product/login.html'
   }, 3000)
 })
 
