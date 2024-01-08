@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hồ sơ</title>
+    <title>Hồ Sơ</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,28 +33,48 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <nav>
+      <section class="nav container">
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="#about" class="nav__menu-link">Giới thiệu</a>
+          </li>
+          <li class="nav__menu-item">
+            <a
+              href="https://www.facebook.com/phanh.1521/"
+              class="nav__menu-link"
+              >Liên Hệ</a
+            >
+          </li>
+        </ul>
+        <a href="/" class="nav__logo"> Tết Nguyên Đán </a>
+        <ul class="nav__menu" id="not-logged">
+          <li class="nav__menu-item">
+            <a href="/login.html" class="nav__menu-link">Đăng Nhập</a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/register.html" class="nav__menu-link">Đăng Ký</a>
+          </li>
+        </ul>
+        <ul class="nav__menu" id="logged">
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link" id="profile-fullName">Họ Tên</a>
+            <ul class="nav__submenu">
+              <li class="nav__menu-item">
+                <a href="/user/profile.html" class="nav__menu-link">Hồ Sơ</a>
+              </li>
+              <li class="nav__menu-item">
+                <a href="#" class="nav__menu-link" id="logout">Đăng Xuất</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__menu-item">
+            <a href="/user/post.html" class="nav__menu-link">Đăng Bài</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
     <main>
-      <nav>
-        <section class="nav container">
-          <ul class="nav__menu">
-            <li class="nav__menu-item">
-              <a href="/about.html" class="nav__menu-link">Giới thiệu</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="/contact.html" class="nav__menu-link">Liên Hệ</a>
-            </li>
-          </ul>
-          <a href="/" class="nav__logo"> Tết Nguyên Đán </a>
-          <ul class="nav__menu">
-            <li class="nav__menu-item">
-              <a href="/login.html" class="nav__menu-link">Đăng Ký</a>
-            </li>
-            <li class="nav__menu-item">
-              <a href="/register.html" class="nav__menu-link">Đăng Nhập</a>
-            </li>
-          </ul>
-        </section>
-      </nav>
       <section class="section container">
         <form action="" class="form">
           <h3 class="form__title">Hồ Sơ</h3>
@@ -112,7 +133,7 @@
               <a href="" class="footer__link">Thông Tin</a>
             </li>
             <li class="footer__item">
-              <a href="" class="footer__link">Món Ăn</a>
+              <a href="" class="footer__link">Ẩm thực</a>
             </li>
             <li class="footer__item">
               <a href="" class="footer__link">Đồ Uống</a>

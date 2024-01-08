@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng Ký</title>
+    <title>Ẩm thực</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,17 +20,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/toastify-js"
-    ></script>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .posts {
+        flex-wrap: wrap;
+        gap: 48px;
+      }
+
+      .post:not(:last-of-type) {
+        border: 0;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -76,51 +77,8 @@
     </nav>
     <main>
       <section class="section container">
-        <form action="" class="form">
-          <h3 class="form__title">Đăng Ký</h3>
-          <div class="form__group">
-            <label for="" class="form__label">Email</label>
-            <input
-              type="email"
-              name="email"
-              class="form__input"
-              placeholder="Email"
-            />
-          </div>
-          <div class="form__group">
-            <label for="" class="form__label">Họ Tên</label>
-            <input
-              type="text"
-              name="fullName"
-              class="form__input"
-              placeholder="Họ Tên"
-            />
-          </div>
-          <div class="form__group">
-            <label for="" class="form__label">Mật Khẩu</label>
-            <input
-              type="password"
-              name="password"
-              class="form__input"
-              placeholder="Mật Khẩu"
-            />
-          </div>
-          <div class="form__group">
-            <label for="" class="form__label">Nhập Lại Mật Khẩu</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              class="form__input"
-              placeholder="Nhập Lại Mật Khẩu"
-            />
-          </div>
-          <div class="form__group">
-            <button class="form__button">Đăng Ký</button>
-          </div>
-          <div class="form__group">
-            <a href="register.html" class="form__link">Đăng ký tài khoản</a>
-          </div>
-        </form>
+        <h2 class="section__title">Ẩm thực trong dịp Tết Nguyên Đán</h2>
+        <div class="posts" id="posts"></div>
       </section>
     </main>
     <footer class="footer">
@@ -185,6 +143,6 @@
       </div>
     </footer>
     <script src="/js/utils.js"></script>
-    <script src="/js/register.js"></script>
+    <script src="js/foods.js"></script>
   </body>
 </html>

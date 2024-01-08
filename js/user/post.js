@@ -1,23 +1,9 @@
-const user = JSON.parse(localStorage.getItem('user'))
-
 if (!user) {
   window.location.href = '/login.html'
 }
 
-const posts = JSON.parse(localStorage.getItem('posts')) || [
-  {
-    id: 1,
-    title:
-      'Giáo viên tham gia trực tết vào thời điểm nào thì được hưởng tiền làm thêm giờ?',
-    content: `Thời điểm này, đa phần các địa phương đã có lịch nghỉ tết Nguyên đán Giáp Thìn (2024) và thông báo đến các nhà trường. Đa phần, học sinh mầm non và học sinh phổ thông sẽ được nghỉ từ 10-15 ngày liên tục.
-
-            Học sinh nghỉ Tết cũng dẫn đến hoạt động dạy và học ở nhà trường tạm nghỉ nhưng điều này không có nghĩa là học sinh nghỉ thì giáo viên cũng được nghỉ như học sinh. Bởi, lịch nghỉ Tết của giáo viên theo lịch nghỉ chung của cán bộ, công chức, viên chức.`,
-    image: 'https://picsum.photos/seed/picsum/200/300',
-    category: 0,
-    author: 'admin@gmail.com',
-  },
-]
-const categories = ['Thông tin', 'Đồ ăn', 'Đồ uống', 'Trang trí']
+const posts = JSON.parse(localStorage.getItem('posts')) || []
+const categories = ['Thông tin', 'Ẩm thực', 'Đồ uống', 'Trang trí']
 const form = document.querySelector('form')
 const table = document.querySelector('table')
 const tbody = table.querySelector('tbody')
@@ -41,7 +27,7 @@ form.addEventListener('submit', function (e) {
       title: form.title.value,
       content: form.content.value,
       image: form.preview.src,
-      category: form.category.value,
+      category: Number(form.category.value),
       author: user.email,
     }
     localStorage.setItem('posts', JSON.stringify(posts))

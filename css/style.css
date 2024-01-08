@@ -15,6 +15,10 @@
   --secondary-font: 'Yrsa', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--primary-font);
   background-color: #f1f1f1;
@@ -70,6 +74,7 @@ nav {
 .nav__menu-item {
   list-style: none;
   height: 100%;
+  position: relative;
 }
 
 .nav__menu-item a {
@@ -80,10 +85,27 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .nav__menu-item a:hover {
   color: var(--secondary-color);
+}
+
+.nav__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.nav__menu-item:hover .nav__submenu {
+  display: flex;
 }
 
 .banner {
@@ -126,6 +148,19 @@ nav {
   font-weight: 600;
   margin-bottom: 48px;
   text-align: center;
+}
+
+.section__image {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 32px;
+}
+
+.section__content {
+  width: 680px;
+  margin: 0 auto;
 }
 
 .posts {
