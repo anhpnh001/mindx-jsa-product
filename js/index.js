@@ -176,7 +176,7 @@ topFoodPosts.forEach((post, index) => {
     categories[post.category]
   foodPosts[index].querySelector(
     '.card__title'
-  ).href = `/detail.html?id=${post.id}`
+  ).href = `/mindx-jsa-product/detail.html?id=${post.id}`
   foodPosts[index].querySelector('.card__category').href =
     '/mindx-jsa-product/foods.html'
 })
@@ -189,7 +189,7 @@ topDrinkPosts.forEach((post, index) => {
     categories[post.category]
   drinkPosts[index].querySelector(
     '.card__title'
-  ).href = `/detail.html?id=${post.id}`
+  ).href = `/mindx-jsa-product/detail.html?id=${post.id}`
   drinkPosts[index].querySelector('.card__category').href =
     '/mindx-jsa-product/drinks.html'
 })
@@ -202,7 +202,7 @@ topDecorationPosts.forEach((post, index) => {
     categories[post.category]
   decorationPosts[index].querySelector(
     '.card__title'
-  ).href = `/detail.html?id=${post.id}`
+  ).href = `/mindx-jsa-product/detail.html?id=${post.id}`
   decorationPosts[index].querySelector('.card__category').href =
     '/mindx-jsa-product/decorations.html'
 })
