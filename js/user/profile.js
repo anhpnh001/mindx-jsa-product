@@ -1,5 +1,5 @@
 if (!user) {
-  window.location.href = '/login.html'
+  window.location.href = '/mindx-jsa-product/login.html'
 }
 
 const users = JSON.parse(localStorage.getItem('users')) || []
